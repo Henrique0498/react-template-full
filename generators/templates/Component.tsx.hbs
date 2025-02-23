@@ -1,0 +1,14 @@
+import { ComponentProps } from 'react'
+
+import * as S from './styled'
+
+interface In{{pascalCase name}} extends  ComponentProps<"div"> {
+}
+
+export default function {{pascalCase name}} (props: In{{pascalCase name}}) {
+  return (
+    <S.Container {...props}>
+      <h1>{{pascalCase name}}</h1>
+    </S.Container>
+  )
+}

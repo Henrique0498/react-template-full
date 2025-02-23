@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@templates/*": ["src/components/templates/*"],
+      "@pages/*": ["src/components/pages/*"],
+      "@assets/*": ["src/assets/*"],
+      "@context/*": ["src/context/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@routers/*": ["src/routers/*"],
+      "@styles/*": ["src/styles/*"],
+      "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "types": ["vitest", "@testing-library/jest-dom"]
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
