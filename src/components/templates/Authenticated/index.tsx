@@ -1,23 +1,15 @@
 import { Outlet } from "react-router-dom";
+import S from "./styled";
+import { HeaderAuthenticated } from "@organisms/Header";
 
 export function TemplateAuthenticated() {
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>authenticada</li>
-          </ul>
-        </nav>
-      </header>
+    <S.Container>
+      <HeaderAuthenticated />
+
       <main>
         <Outlet />
       </main>
-      <footer>
-        <p>&copy; 2022 My Website</p>
-      </footer>
-    </>
+    </S.Container>
   );
 }
