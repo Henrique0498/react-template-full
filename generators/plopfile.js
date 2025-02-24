@@ -35,11 +35,11 @@ export default function (plop) {
       //   path: '../src/components/{{atomic}}/{{pascalCase name}}/storybook.stories.tsx',
       //   templateFile: 'templates/stories.tsx.hbs'
       // },
-      // {
-      //   type: "add",
-      //   path: "../src/components/{{atomic}}/{{pascalCase name}}/test.spec.tsx",
-      //   templateFile: "templates/test.tsx.hbs",
-      // },
+      {
+        type: "add",
+        path: "../src/components/{{atomic}}/{{pascalCase name}}/test.spec.tsx",
+        templateFile: "templates/test.tsx.hbs",
+      },
     ],
   });
 }
