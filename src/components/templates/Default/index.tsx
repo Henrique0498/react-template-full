@@ -1,23 +1,20 @@
 import { Outlet } from "react-router-dom";
 
+import S from "./styled";
+import { HeaderDefault } from "@organisms/Header";
+
 export function TemplateDefault() {
   return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-      </header>
+    <S.Container>
+      <HeaderDefault />
+
       <main>
         <Outlet />
       </main>
+
       <footer>
         <p>&copy; 2022 My Website</p>
       </footer>
-    </>
+    </S.Container>
   );
 }
