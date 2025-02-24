@@ -12,7 +12,7 @@ export function Homepage() {
     <S.Container>
       <h1>Vite + React</h1>
 
-      <Button onClick={() => setModal(true)}>Abrir Modal</Button
+      <Button onClick={() => setModal(true)}>Abrir Modal</Button>
 
       <Modal open={modal} onClose={() => setModal(false)}>
         <div>teste</div>

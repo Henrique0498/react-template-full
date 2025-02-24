@@ -1,11 +1,11 @@
 import { customRenderJest } from "@utils/JestUtils";
 
-import Header from '.'
+import { HeaderAuthenticated } from ".";
 
-describe('<Header />', () => {
-  it('should render', () => {
-    const { container } = customRenderJest(<Header />)
+describe("<Header />", () => {
+  it("should render", () => {
+    const { container } = customRenderJest(<HeaderAuthenticated />);
 
-    expect(container.firstChild)
-  })
-})
+    expect(container.firstChild);
+  });
+});

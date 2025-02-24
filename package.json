@@ -8,15 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "jest --passWithNoTests --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "plop": "npx plop --plopfile generators/plopfile.js",
-    "prepare": "husky"
+    "prepare": "husky && husky install"
   },
   "lint-staged": {
     "**/*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
+      "eslint --fix"
     ]
   },
   "dependencies": {
@@ -42,7 +41,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
-    "husky": "^9.1.7",
+    "husky": "^8.0.0",
     "jsdom": "^26.0.0",
     "lint-staged": "^15.4.3",
     "plop": "^4.0.1",
